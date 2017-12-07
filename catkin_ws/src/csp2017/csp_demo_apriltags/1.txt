@@ -1,0 +1,5 @@
+... logging to /home/ubuntu/.ros/log/fc7aca08-d024-11e7-bb0f-b827ebc5a807/roslaunch-nctuman-6768.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/ubuntu/duckietown/catkin_ws/src/csp2017/csp_demo_apriltags/launch/apriltags_demo.launch

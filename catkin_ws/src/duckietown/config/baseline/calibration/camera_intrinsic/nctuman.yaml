@@ -1,0 +1,23 @@
+camera_matrix:
+  cols: 3
+  data: [325.98846197156377, 0.0, 317.00910599171544, 0.0, 328.4294058278458, 247.8912126347843,
+    0.0, 0.0, 1.0]
+  rows: 3
+camera_name: nctuman/camera_node
+distortion_coefficients:
+  cols: 5
+  data: [-0.3195317152135205, 0.08258911526533837, -0.0012414483999367727, -0.0005436895821025053,
+    0.0]
+  rows: 1
+distortion_model: plumb_bob
+image_height: 480
+image_width: 640
+projection_matrix:
+  cols: 4
+  data: [234.4938201904297, 0.0, 316.19722487582294, 0.0, 0.0, 257.71087646484375,
+    250.5809161426987, 0.0, 0.0, 0.0, 1.0, 0.0]
+  rows: 3
+rectification_matrix:
+  cols: 3
+  data: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+  rows: 3

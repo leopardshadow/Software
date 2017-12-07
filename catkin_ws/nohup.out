@@ -1,0 +1,276 @@
+[31m[csp] is neither a launch file in package [csp_bluetooth_demo] nor is [csp_bluetooth_demo] a launch file name[0m
+[31mThe traceback for the exception was written to the log file[0m
+[31m[csp] is neither a launch file in package [csp_bluetooth_demo] nor is [csp_bluetooth_demo] a launch file name[0m
+[31mThe traceback for the exception was written to the log file[0m
+[31m[csp] is neither a launch file in package [csp_bluetooth_demo] nor is [csp_bluetooth_demo] a launch file name[0m
+[31mThe traceback for the exception was written to the log file[0m
+... logging to /home/ubuntu/.ros/log/79e06656-c526-11e7-84db-b827ebc5a807/roslaunch-nctuman-10307.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/ubuntu/duckietown/catkin_ws/src/csp_bluetooth_practice/csp_bluetooth_demo/launch/csp_bluetooth_demo.launch
+[1mstarted roslaunch server http://nctuman.local:54775/[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /nctuman/cam_info_reader_node/
+ * /nctuman/camera_node/
+ * /nctuman/fake_coordinator_node/
+ * /nctuman/fsm_node/
+ * /nctuman/ground_projection/
+ * /nctuman/inverse_kinematics_node/
+ * /nctuman/joy_mapper_node/
+ * /nctuman/joy_node/
+ * /nctuman/lane_controller_node/
+ * /nctuman/lane_filter_node/
+ * /nctuman/lane_pose_visualizer_node/
+ * /nctuman/led_emitter_node/
+ * /nctuman/line_detector_node/
+ * /nctuman/logic_gate_node/
+ * /nctuman/stop_line_filter_node/
+ * /nctuman/wheels_driver_node/
+
+PARAMETERS
+ * /bluetooth_bridge/recv_topic: /bluetooth/received
+ * /bluetooth_bridge/rfcomm_channel: 22
+ * /bluetooth_bridge/send_topic: /bluetooth/send
+ * /bluetooth_bridge/status_topic: /bluetooth/status
+ * /enable_statistics: False
+ * /nctuman/cam_info_reader_node/cali_file_name: nctuman
+ * /nctuman/cam_info_reader_node/config: baseline
+ * /nctuman/cam_info_reader_node/image_type: compressed
+ * /nctuman/cam_info_reader_node/pub_freq: 1.0
+ * /nctuman/camera_node/framerate_high: 30
+ * /nctuman/camera_node/framerate_low: 15
+ * /nctuman/camera_node/res_h: 480
+ * /nctuman/camera_node/res_w: 640
+ * /nctuman/car_cmd_switch_node/mappings/AVOID_OBSTACLE: obstacle
+ * /nctuman/car_cmd_switch_node/mappings/AVOID_VEHICLE: vehicle
+ * /nctuman/car_cmd_switch_node/mappings/COORDINATION: coordination
+ * /nctuman/car_cmd_switch_node/mappings/INTERSECTION_CONTROL: intersection
+ * /nctuman/car_cmd_switch_node/mappings/INTERSECTION_RECOVERY: recovery
+ * /nctuman/car_cmd_switch_node/mappings/JOYSTICK_CONTROL: joystick
+ * /nctuman/car_cmd_switch_node/mappings/LANE_FOLLOWING: lane
+ * /nctuman/car_cmd_switch_node/mappings/LANE_FOLLOWING_AVOID: lane
+ * /nctuman/car_cmd_switch_node/mappings/LANE_RECOVERY: recovery
+ * /nctuman/car_cmd_switch_node/mappings/LOCALIZATION: stop
+ * /nctuman/car_cmd_switch_node/mappings/PARALLEL_AUTONOMY: parallel_autonomy
+ * /nctuman/car_cmd_switch_node/mode_topic: fsm_node/mode
+ * /nctuman/car_cmd_switch_node/source_topics/coordination: simple_coordinato...
+ * /nctuman/car_cmd_switch_node/source_topics/intersection: open_loop_interse...
+ * /nctuman/car_cmd_switch_node/source_topics/joystick: joy_mapper_node/c...
+ * /nctuman/car_cmd_switch_node/source_topics/lane: lane_controller_n...
+ * /nctuman/car_cmd_switch_node/source_topics/obstacle: simple_stop_contr...
+ * /nctuman/car_cmd_switch_node/source_topics/parallel_autonomy: lane_supervisor_n...
+ * /nctuman/car_cmd_switch_node/source_topics/recovery: lane_recovery_nod...
+ * /nctuman/car_cmd_switch_node/source_topics/vehicle: vehicle_avoidance...
+ * /nctuman/duckiebot_visualizer/veh_name: nctuman
+ * /nctuman/fsm_node/events/at_stop_line/msg_type: BoolStamped
+ * /nctuman/fsm_node/events/at_stop_line/topic: stop_line_filter_...
+ * /nctuman/fsm_node/events/at_stop_line/trigger: True
+ * /nctuman/fsm_node/events/intersection_done/msg_type: BoolStamped
+ * /nctuman/fsm_node/events/intersection_done/topic: open_loop_interse...
+ * /nctuman/fsm_node/events/intersection_done/trigger: True
+ * /nctuman/fsm_node/events/intersection_done_and_not_parallel_autonomy/msg_type: BoolStamped
+ * /nctuman/fsm_node/events/intersection_done_and_not_parallel_autonomy/topic: logic_gate_node/i...
+ * /nctuman/fsm_node/events/intersection_done_and_not_parallel_autonomy/trigger: True
+ * /nctuman/fsm_node/events/intersection_done_and_parallel_autonomy/msg_type: BoolStamped
+ * /nctuman/fsm_node/events/intersection_done_and_parallel_autonomy/topic: logic_gate_node/i...
+ * /nctuman/fsm_node/events/intersection_done_and_parallel_autonomy/trigger: True
+ * /nctuman/fsm_node/events/intersection_go/msg_type: BoolStamped
+ * /nctuman/fsm_node/events/intersection_go/topic: simple_coordinato...
+ * /nctuman/fsm_node/events/intersection_go/trigger: True
+ * /nctuman/fsm_node/events/joystick_override_off/msg_type: BoolStamped
+ * /nctuman/fsm_node/events/joystick_override_off/topic: joy_mapper_node/j...
+ * /nctuman/fsm_node/events/joystick_override_off/trigger: False
+ * /nctuman/fsm_node/events/joystick_override_on/msg_type: BoolStamped
+ * /nctuman/fsm_node/events/joystick_override_on/topic: joy_mapper_node/j...
+ * /nctuman/fsm_node/events/joystick_override_on/trigger: True
+ * /nctuman/fsm_node/events/obstacle_cleared/msg_type: BoolStamped
+ * /nctuman/fsm_node/events/obstacle_cleared/topic: obstacle_safety_n...
+ * /nctuman/fsm_node/events/obstacle_cleared/trigger: False
+ * /nctuman/fsm_node/events/obstacle_detection/msg_type: BoolStamped
+ * /nctuman/fsm_node/events/obstacle_detection/topic: obstacle_safety_n...
+ * /nctuman/fsm_node/events/obstacle_detection/trigger: True
+ * /nctuman/fsm_node/events/parallel_autonomy_off/msg_type: BoolStamped
+ * /nctuman/fsm_node/events/parallel_autonomy_off/topic: joy_mapper_node/p...
+ * /nctuman/fsm_node/events/parallel_autonomy_off/trigger: False
+ * /nctuman/fsm_node/events/parallel_autonomy_on/msg_type: BoolStamped
+ * /nctuman/fsm_node/events/parallel_autonomy_on/topic: joy_mapper_node/p...
+ * /nctuman/fsm_node/events/parallel_autonomy_on/trigger: True
+ * /nctuman/fsm_node/events/start_avoidance/msg_type: BoolStamped
+ * /nctuman/fsm_node/events/start_avoidance/topic: joy_mapper_node/s...
+ * /nctuman/fsm_node/events/start_avoidance/trigger: True
+ * /nctuman/fsm_node/events/vehicle_cleared/msg_type: BoolStamped
+ * /nctuman/fsm_node/events/vehicle_cleared/topic: vehicle_avoidance...
+ * /nctuman/fsm_node/events/vehicle_cleared/trigger: False
+ * /nctuman/fsm_node/events/vehicle_detection/msg_type: BoolStamped
+ * /nctuman/fsm_node/events/vehicle_detection/topic: vehicle_avoidance...
+ * /nctuman/fsm_node/events/vehicle_detection/trigger: True
+ * /nctuman/fsm_node/global_transitions/joystick_override_on: JOYSTICK_CONTROL
+ * /nctuman/fsm_node/global_transitions/parallel_autonomy_off: JOYSTICK_CONTROL
+ * /nctuman/fsm_node/global_transitions/parallel_autonomy_on: PARALLEL_AUTONOMY
+ * /nctuman/fsm_node/initial_state: JOYSTICK_CONTROL
+ * /nctuman/fsm_node/nodes/apriltag_node: apriltag_detector...
+ * /nctuman/fsm_node/nodes/decoder_node: decoder_node/switch
+ * /nctuman/fsm_node/nodes/framerate_high: camera_node/frame...
+ * /nctuman/fsm_node/nodes/lane_filter_node: lane_filter_node/...
+ * /nctuman/fsm_node/nodes/led_detector_node: LED_detector_node...
+ * /nctuman/fsm_node/nodes/led_emitter_node: led_emitter_node/...
+ * /nctuman/fsm_node/nodes/line_detector_node: line_detector_nod...
+ * /nctuman/fsm_node/nodes/static_object_detector_node: static_object_det...
+ * /nctuman/fsm_node/nodes/stop_line_filter_node: stop_line_filter_...
+ * /nctuman/fsm_node/nodes/vehicle_detector_node: vehicle_detection...
+ * /nctuman/fsm_node/states/AVOID_OBSTACLE/active_nodes: ['static_object_d...
+ * /nctuman/fsm_node/states/AVOID_OBSTACLE/lights: ['avoid_obstacle']
+ * /nctuman/fsm_node/states/AVOID_OBSTACLE/transitions/obstacle_cleared: LANE_FOLLOWING_AVOID
+ * /nctuman/fsm_node/states/AVOID_VEHICLE/active_nodes: ['vehicle_detecto...
+ * /nctuman/fsm_node/states/AVOID_VEHICLE/lights: ['avoid_vehicle']
+ * /nctuman/fsm_node/states/AVOID_VEHICLE/transitions/vehicle_cleared: PARALLEL_AUTONOMY
+ * /nctuman/fsm_node/states/COORDINATION/active_nodes: ['apriltag_node',...
+ * /nctuman/fsm_node/states/COORDINATION/lights: ['coordination']
+ * /nctuman/fsm_node/states/COORDINATION/transitions/intersection_go: INTERSECTION_CONTROL
+ * /nctuman/fsm_node/states/INTERSECTION_CONTROL/active_nodes: ['line_detector_n...
+ * /nctuman/fsm_node/states/INTERSECTION_CONTROL/transitions/intersection_done_and_not_parallel_autonomy: LANE_FOLLOWING
+ * /nctuman/fsm_node/states/INTERSECTION_CONTROL/transitions/intersection_done_and_parallel_autonomy: PARALLEL_AUTONOMY
+ * /nctuman/fsm_node/states/INTERSECTION_RECOVERY/active_nodes: ['lane_filter_nod...
+ * /nctuman/fsm_node/states/INTERSECTION_RECOVERY/transitions/found_lane: LANE_FOLLOWING
+ * /nctuman/fsm_node/states/INTERSECTION_RECOVERY/transitions/intersection_recovery_timeout_reached: JOYSTICK_CONTROL
+ * /nctuman/fsm_node/states/JOYSTICK_CONTROL/active_nodes: ['lane_filter_nod...
+ * /nctuman/fsm_node/states/JOYSTICK_CONTROL/lights: ['joystick']
+ * /nctuman/fsm_node/states/JOYSTICK_CONTROL/transitions/joystick_override_off: LANE_FOLLOWING
+ * /nctuman/fsm_node/states/JOYSTICK_CONTROL/transitions/start_avoidance: LANE_FOLLOWING_AVOID
+ * /nctuman/fsm_node/states/LANE_FOLLOWING/active_nodes: ['lane_filter_nod...
+ * /nctuman/fsm_node/states/LANE_FOLLOWING/lights: ['lane_following']
+ * /nctuman/fsm_node/states/LANE_FOLLOWING/transitions/at_stop_line: COORDINATION
+ * /nctuman/fsm_node/states/LANE_FOLLOWING_AVOID/active_nodes: ['vehicle_detecto...
+ * /nctuman/fsm_node/states/LANE_FOLLOWING_AVOID/lights: ['lane_following']
+ * /nctuman/fsm_node/states/LANE_FOLLOWING_AVOID/transitions/at_stop_line: COORDINATION
+ * /nctuman/fsm_node/states/LANE_FOLLOWING_AVOID/transitions/obstacle_detection: AVOID_OBSTACLE
+ * /nctuman/fsm_node/states/LANE_FOLLOWING_AVOID/transitions/vehicle_detection: AVOID_VEHICLE
+ * /nctuman/fsm_node/states/LANE_RECOVERY/active_nodes: ['lane_filter_nod...
+ * /nctuman/fsm_node/states/LANE_RECOVERY/transitions/found_lane: LANE_FOLLOWING
+ * /nctuman/fsm_node/states/LANE_RECOVERY/transitions/lane_recovery_timeout_reached: JOYSTICK_CONTROL
+ * /nctuman/fsm_node/states/PARALLEL_AUTONOMY/active_nodes: ['vehicle_detecto...
+ * /nctuman/fsm_node/states/PARALLEL_AUTONOMY/lights: ['parallel_autono...
+ * /nctuman/fsm_node/states/PARALLEL_AUTONOMY/transitions/at_stop_line: COORDINATION
+ * /nctuman/fsm_node/states/PARALLEL_AUTONOMY/transitions/vehicle_detection: AVOID_VEHICLE
+ * /nctuman/ground_projection/config: baseline
+ * /nctuman/ground_projection/config_file_name: nctuman
+ * /nctuman/joy_mapper_node/bicycle_kinematics: 0.0
+ * /nctuman/joy_mapper_node/simulated_vehicle_length: 0.18
+ * /nctuman/joy_mapper_node/speed_gain: 0.41
+ * /nctuman/joy_mapper_node/steer_angle_gain: 1.04
+ * /nctuman/joy_mapper_node/steer_gain: 8.3
+ * /nctuman/joy_node/autorepeat_rate: 2.0
+ * /nctuman/joy_node/coalesce_interval: 0.02
+ * /nctuman/joy_node/deadzone: 0.01
+ * /nctuman/joy_node/dev: /dev/input/js0
+ * /nctuman/lane_controller_node/d_offset: 0.0
+ * /nctuman/lane_controller_node/d_thres: 0.2615
+ * /nctuman/lane_controller_node/k_d: -10.3
+ * /nctuman/lane_controller_node/k_theta: -5.15
+ * /nctuman/lane_controller_node/theta_thres: 0.523
+ * /nctuman/lane_controller_node/v_bar: 0.3864
+ * /nctuman/lane_filter_node/cov_v: 0.5
+ * /nctuman/lane_filter_node/d_max: 0.3
+ * /nctuman/lane_filter_node/d_min: -0.15
+ * /nctuman/lane_filter_node/delta_d: 0.02
+ * /nctuman/lane_filter_node/delta_phi: 0.05
+ * /nctuman/lane_filter_node/l_max: 2
+ * /nctuman/lane_filter_node/l_peak: 1
+ * /nctuman/lane_filter_node/lanewidth: 0.2
+ * /nctuman/lane_filter_node/linewidth_white: 0.05
+ * /nctuman/lane_filter_node/linewidth_yellow: 0.025
+ * /nctuman/lane_filter_node/max_segment_dist: 0.3
+ * /nctuman/lane_filter_node/mean_d_0: 0
+ * /nctuman/lane_filter_node/mean_phi_0: 0
+ * /nctuman/lane_filter_node/min_max: 0.1
+ * /nctuman/lane_filter_node/min_segs: 10
+ * /nctuman/lane_filter_node/peak_val: 10
+ * /nctuman/lane_filter_node/phi_max: 1.5
+ * /nctuman/lane_filter_node/phi_min: -1.5
+ * /nctuman/lane_filter_node/sigma_d_0: 0.1
+ * /nctuman/lane_filter_node/sigma_d_mask: 0.05
+ * /nctuman/lane_filter_node/sigma_phi_0: 0.1
+ * /nctuman/lane_filter_node/sigma_phi_mask: 0.05
+ * /nctuman/lane_filter_node/use_distance_weighting: False
+ * /nctuman/lane_filter_node/use_maximum_segment_dist: False
+ * /nctuman/lane_filter_node/use_min_segs: False
+ * /nctuman/lane_filter_node/use_propagation: False
+ * /nctuman/lane_filter_node/zero_val: 1
+ * /nctuman/led_emitter_node/LED_protocol/colors/black: [0, 0, 0]
+ * /nctuman/led_emitter_node/LED_protocol/colors/blue: [0, 0, 1]
+ * /nctuman/led_emitter_node/LED_protocol/colors/cyan: [0, 1, 1]
+ * /nctuman/led_emitter_node/LED_protocol/colors/green: [0, 1, 0]
+ * /nctuman/led_emitter_node/LED_protocol/colors/purple: [1, 0, 1]
+ * /nctuman/led_emitter_node/LED_protocol/colors/red: [1, 0, 0]
+ * /nctuman/led_emitter_node/LED_protocol/colors/white: [0, 0, 0]
+ * /nctuman/led_emitter_node/LED_protocol/colors/yellow: [1, 1, 0]
+ * /nctuman/led_emitter_node/LED_protocol/frequencies/f1: 7.8
+ * /nctuman/led_emitter_node/LED_protocol/frequencies/f2: 4
+ * /nctuman/led_emitter_node/LED_protocol/frequencies/f3: 5.7
+ * /nctuman/led_emitter_node/LED_protocol/signals/CAR_SIGNAL_A/color: green
+ * /nctuman/led_emitter_node/LED_protocol/signals/CAR_SIGNAL_A/frequency: 7.8
+ * /nctuman/led_emitter_node/LED_protocol/signals/CAR_SIGNAL_B/color: purple
+ * /nctuman/led_emitter_node/LED_protocol/signals/CAR_SIGNAL_B/frequency: 4
+ * /nctuman/led_emitter_node/LED_protocol/signals/CAR_SIGNAL_C/color: yellow
+ * /nctuman/led_emitter_node/LED_protocol/signals/CAR_SIGNAL_C/frequency: 5.7
+ * /nctuman/led_emitter_node/LED_protocol/signals/light_off/color: black
+ * /nctuman/led_emitter_node/LED_protocol/signals/light_off/frequency: 7.8
+ * /nctuman/led_emitter_node/LED_protocol/signals/traffic_light_go/color: green
+ * /nctuman/led_emitter_node/LED_protocol/signals/traffic_light_go/frequency: 7.8
+ * /nctuman/led_emitter_node/LED_protocol/signals/traffic_light_stop/color: red
+ * /nctuman/led_emitter_node/LED_protocol/signals/traffic_light_stop/frequency: 5.7
+ * /nctuman/line_detector_node/detector: ['line_detector.L...
+ * /nctuman/line_detector_node/img_size: [120, 160]
+ * /nctuman/line_detector_node/top_cutoff: 40
+ * /nctuman/line_detector_node/verbose: False
+ * /nctuman/logic_gate_node/events/intersection_done/topic: open_loop_interse...
+ * /nctuman/logic_gate_node/events/intersection_done/trigger: True
+ * /nctuman/logic_gate_node/events/parallel_autonomy_off/topic: joy_mapper_node/p...
+ * /nctuman/logic_gate_node/events/parallel_autonomy_off/trigger: False
+ * /nctuman/logic_gate_node/events/parallel_autonomy_on/topic: joy_mapper_node/p...
+ * /nctuman/logic_gate_node/events/parallel_autonomy_on/trigger: True
+ * /nctuman/logic_gate_node/gates/intersection_done_and_parallel_autonomy_off/gate_type: AND
+ * /nctuman/logic_gate_node/gates/intersection_done_and_parallel_autonomy_off/inputs: ['intersection_do...
+ * /nctuman/logic_gate_node/gates/intersection_done_and_parallel_autonomy_off/output_topic: ~intersection_don...
+ * /nctuman/logic_gate_node/gates/intersection_done_and_parallel_autonomy_on/gate_type: AND
+ * /nctuman/logic_gate_node/gates/intersection_done_and_parallel_autonomy_on/inputs: ['intersection_do...
+ * /nctuman/logic_gate_node/gates/intersection_done_and_parallel_autonomy_on/output_topic: ~intersection_don...
+ * /nctuman/stop_line_filter_node/min_segs: 2
+ * /nctuman/stop_line_filter_node/off_time: 2
+ * /nctuman/stop_line_filter_node/stop_distance: 0.2
+ * /rosdistro: indigo
+ * /rosversion: 1.11.16
+
+NODES
+  /nctuman/
+    anti_instagram_node (anti_instagram/anti_instagram_node.py)
+    cam_info_reader_node (pi_camera/cam_info_reader_node.py)
+    camera_node (pi_camera/camera_node_sequence.py)
+    car_cmd_switch_node (dagu_car/car_cmd_switch_node.py)
+    csp_bluetooth_demo_node (csp_bluetooth_demo/csp_bluetooth_demo_node.py)
+    duckiebot_visualizer (duckiebot_visualizer/duckiebot_visualizer.py)
+    fake_coordinator_node (veh_coordinator/fake_coordinator_node.py)
+    fsm_node (fsm/fsm_node.py)
+    ground_projection (ground_projection/ground_projection)
+    inverse_kinematics_node (dagu_car/inverse_kinematics_node.py)
+    joy_mapper_node (joy_mapper/joy_mapper_node.py)
+    joy_node (joy/joy_node)
+    lane_controller_node (lane_control/lane_controller_node.py)
+    lane_filter_node (lane_filter/lane_filter_node.py)
+    lane_pose_visualizer_node (lane_filter/lane_pose_visualizer_node.py)
+    led_emitter_node (led_emitter/led_emitter_node.py)
+    line_detector_node (line_detector/line_detector_node.py)
+    logic_gate_node (fsm/logic_gate_node.py)
+    stop_line_filter_node (stop_line_filter/stop_line_filter_node.py)
+    wheels_driver_node (dagu_car/wheels_driver_node.py)
+  /
+    bluetooth_bridge (bluetooth_bridge/bluetooth_bridge_server_node.py)
+
+auto-starting new master
+[1mprocess[master]: star[WARN] [WallTime: 1510215545.480497] [/nctuman/cam_info_reader_node] ==============CompressedImage
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
