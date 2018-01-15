@@ -1,0 +1,6 @@
+<launch>
+    <arg name="veh" doc="Name of vehicle. ex: megaman"/>
+    <node ns="$(arg veh)" machine="$(arg veh)" pkg="awesome_gripper" type="awesome_gripper_node.py" name="awesome_gripper_node" output="screen" clear_params="true" required="true"/>
+    
+
+</launch>
