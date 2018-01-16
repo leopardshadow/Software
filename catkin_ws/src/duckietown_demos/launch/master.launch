@@ -94,6 +94,8 @@
 	<arg name="/localization/map_name" default="open_house_dp6" />
 	<arg name="/localization/gui" default="false"/>
 
+	<arg name="gripper" default="true"/>
+
 	<!-- end switch args -->
 	
 	<!-- Enable statistics -->
@@ -637,6 +639,18 @@
 			<arg name="param_file_name" value="$(arg param_file_name)"/>
 		</include>
 	</group>
+
+	<!-- Start gripper node -->
+	<group if="$(arg gripper)">
+        <include file="$(find csp_joy_mapper_demo)/launch/joy_mapper_demo.launch">
+			<arg name="veh" value="$(arg veh)"/>
+      </include>
+    </group>
+
+	<!-- End gripper node -->
+
+
+
 	<!-- End localization -->
 
 </launch>
