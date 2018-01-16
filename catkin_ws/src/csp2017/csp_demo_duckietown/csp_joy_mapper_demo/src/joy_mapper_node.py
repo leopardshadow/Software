@@ -69,14 +69,14 @@ class JoyMapperNode(object):
 
 
                 #gripperrrrrr_cmd
-                if(joy_msg.buttons[0] == 1):
+                if(joy_msg.buttons[4] == 1):
 			rospy.loginfo("Grip Open")
 
                         g_cmd = Pixel()
                         g_cmd.u = 1
                         self.pub_Grip.publish(g_cmd)
 
-		elif(joy_msg.buttons[1] == 1):
+		elif(joy_msg.buttons[5] == 1):
 			rospy.loginfo("Grip Close")
                         g_cmd = Pixel()
                         g_cmd.u = 2
