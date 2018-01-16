@@ -393,62 +393,6 @@
 	</group>
 	<!--End Apriltags -->
 
-	<!-- Start LEDs Detection -->
-	<group if="$(arg LED)">
-		
-
-		<!-- Detection -->
-		<group if="$(arg /LED/detector)">
-			<include file="$(find led_detection)/launch/LED_detection.launch">
-				<arg name="veh" value="$(arg veh)"/>
-				<arg name="config" value="$(arg config)"/>
-				<arg name="param_file_name" value="$(arg param_file_name)"/>
-			</include>
-		</group>
-
-        <!--remap from="led_joy_mapper_node/change_color_pattern" to="led_emitter_node/change_color_pattern" /-->
-		<group if="$(arg /LED/joystick)">
-			<include file="$(find led_joy_mapper)/launch/led_joy_mapper_node.launch">
-				<arg name="veh" value="$(arg veh)"/>
-				<arg name="config" value="$(arg config)"/>
-				<arg name="param_file_name" value="$(arg param_file_name)"/>
-			</include>
-		</group>
-		
-		<remap from="led_pattern_switch_node/change_color_pattern" to="led_emitter_node/change_color_pattern" />    
-		<group if="$(arg /LED/pattern_switch)">
-			<include file="$(find led_emitter)/launch/led_pattern_switch_node.launch">
-				<arg name="veh" value="$(arg veh)"/>
-				<arg name="config" value="$(arg config)"/>
-				<arg name="param_file_name" value="$(arg param_file_name)"/>
-			</include>    
-		</group>
-        
-		<group if="$(arg /LED/emitter)">
-			<include file="$(find led_emitter)/launch/led_emitter_node.launch">
-				<arg name="veh" value="$(arg veh)"/>
-				<arg name="config" value="$(arg config)"/>
-				<arg name="param_file_name" value="$(arg param_file_name)"/>
-
-			</include>
-		</group>
-
-		<!-- TODO do we need some remappings here? -->
-		<remap from="LED_interpreter_node/raw_led_detection" to="LED_detector_node/raw_led_detection" />
-		<group if="$(arg /LED/interpreter)">
-			<include file="$(find led_interpreter)/launch/LED_interpreter.launch">
-				<arg name="veh" value="$(arg veh)"/>
-				<arg name="config" value="$(arg config)"/>
-				<arg name="param_file_name" value="$(arg param_file_name)"/>
-				<arg name="intersectionType" value="$(arg intersectionType)" />
-			</include>
-		</group>
-		
-		<!-- Not launching visualization because it will crash on robot. Can be manually launched from laptop except that things weren't done right in the elemental launch files. Shoule be fixed -->
-	</group>
-
-	<!-- End LEDs Detection -->
-
 	<!-- Start Odometry Learning -->
 	<group if="$(arg odometry_learning)">
 		<group if="$(arg /odometry_learning/kinematics)">
